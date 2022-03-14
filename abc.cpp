@@ -2,10 +2,10 @@
 using namespace std;
 int main()
 {
-    char name[5]={'i','l','y','a','s'};
+    char names[5]={'i','l','y','a','s'};
     for (int i = 0; i < 5; i++)
     {
-        cout<<name[i];
+        cout<<names[i];
     }
    return 0; 
 }
