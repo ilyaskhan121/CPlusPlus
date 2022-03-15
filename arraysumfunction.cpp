@@ -12,14 +12,14 @@ int getarraySum(int array[] , int size)
 }
 int main()
 {
-    int n;
+    int size;
     cout<<"Enter size of array ";
-    cin>>n;
-    int a[n];
+    cin>>size;
+    int array[size];
     cout<<"Enter elments of array ";
-    for(int i=0;i<n;i++){
-    cin>>a[i];
+    for(int i=0;i<size;i++){
+    cin>>array[i];
     }
-    cout<<getarraySum(a,n);
+    cout<<getarraySum(array,size);
 return 0;
 }
