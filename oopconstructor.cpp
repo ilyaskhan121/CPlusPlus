@@ -3,29 +3,39 @@ using namespace std;
 class math
 {
 private:
-    int c;
+    int a,b,c;
 public:
-    math(int a,int b)//constructor
+    math(int a,int b)//parameterized constructor
     {
-        c=a+b; 
-        cout<<"sum is = "<<c<<endl; 
+        this->a=a;
+        this->b=b;
+        c=a+b;
+         
     }
-   
-
+    int getSum(){
+        cout<<"SUM IS ="<<c<<endl;
+    }
+   math()//default constructor: no need of arguments
+   {
+       cout<<"welcome      "<<endl;
+   }
 };
-class area
+class shape
 { 
 private:
     int A;
 public:
-    area(int l,int w)
+    shape(int l,int w)
     {
         A=w*l;
-        cout<<"Area of recatangle = "<<A;
+        cout<<"AREA OF RECTANGLE : "<<A;
     }
+
 
 };
 int main(){
-    math x(3,5);//by creating object ,member function will executed automatically: 
-    area(6,8);
+    math object_1(8,9);//by creating object ,member function will executed automatically: 
+    object_1.getSum();
+    math object_2;
+    shape rectangle(9,5); 
 }
