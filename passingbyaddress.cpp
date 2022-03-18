@@ -1,5 +1,5 @@
 #include <iostream>
-void function(int *);
+void function(int *);//pointer
 using namespace std;
 int main()
 {

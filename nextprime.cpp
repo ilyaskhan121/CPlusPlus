@@ -7,15 +7,15 @@ int main()
     int prime;
     cout << "enter a prime number   : ";
     cin >> prime;
-    for (int i = prime + 1;; i++ )
+    for (int i = prime + 1;; i++)
     {
         if (nextprime(i) == true)
         {
-            cout << " greater prime is : " << i<<endl;
+            cout << " greater prime is : " << i << endl;
             break;
         }
     }
-     for (int i = prime - 1;; i-- )
+    for (int i = prime - 1;; i--)
     {
         if (nextprime(i) == true)
         {

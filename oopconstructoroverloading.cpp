@@ -17,7 +17,6 @@ public:
 
 };
 int main(){
-    sum(3,4);
-
-    sum(9,5,5);
+    sum object_1(3,4);
+    sum object_2(9,5,5);
 }
