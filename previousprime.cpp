@@ -27,9 +27,9 @@ int main()
         cout<<"You enter wrong input";
     }
     else
-    {for(int i=number+1; ;i++){
+    {for(int i=number-1; ;i--){
         if(isPrime(i)==true){
-            cout<<"Next prime number is = "<<i;
+            cout<<"Previous prime number is = "<<i;
             break;
         }
     }

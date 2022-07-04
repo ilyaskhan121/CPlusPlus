@@ -1,23 +1,19 @@
 #include<iostream>
-int power(int,int);
 using namespace std;
-int main(){
-    int exp;
-    cout<<"enter number for expnent : ";
-    cin>>exp;
-    int b ;
-    cout<<"enter number for base : ";
-    cin>>b;
-   power(exp,b);
+int pow(int base,int exponent){
+int result=1;
+for(int i=1;i<=exponent;i++){
+    result=result*base;
 }
-int power(int exponent,int base){
-    if(exponent==0){
-    return 1;}
-    int result = 1;
-    for (int i = 0; i < exponent; i++)
-    {
-        result = result * base;
-    }
-    cout<<"result : "<<result;
-    
+return result;
+}
+int main(){
+    int base;
+    int expo;
+    cout<<"Enter base : ";
+    cin>>base;
+    cout<<"Enter ecponent : ";
+    cin>>expo;
+    cout<<"Answer is = "<<pow(base,expo);
+
 }

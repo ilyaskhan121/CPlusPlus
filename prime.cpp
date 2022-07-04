@@ -21,17 +21,11 @@ bool isPrime(int number)
 int main()
 {
     int number;
-    cout << "Enter a prime number  : ";
+    cout << "Enter a number for prime test : ";
     cin >> number;
-    if(isPrime(number)!=true){
-        cout<<"You enter wrong input";
-    }
+    bool check = isPrime(number);
+    if (!check)
+        cout << "Number is not prime  ";
     else
-    {for(int i=number+1; ;i++){
-        if(isPrime(i)==true){
-            cout<<"Next prime number is = "<<i;
-            break;
-        }
-    }
-    }
+        cout << "Number is prime  ";
 }
